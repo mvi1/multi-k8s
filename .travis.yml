@@ -12,7 +12,7 @@ before_install:
     - source $HOME/google-cloud-sdk/path.bash.inc
     - gcloud components update kubectl
     - gcloud auth activate-service-account --key-file gcreds.json
-    - gcloud config set project valid-heuristic-264315
+    - gcloud config set project multi-k8s-264607
     - gcloud config set compute/zone europe-west1-b
     - gcloud container clusters get-credentials multi-cluster
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
